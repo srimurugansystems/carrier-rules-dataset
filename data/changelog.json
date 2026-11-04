@@ -1,0 +1,135 @@
+{
+ "meta": {
+  "name": "Carrier rules dataset: dated rule changes",
+  "version": "2026.11.04",
+  "published": "2026-11-04",
+  "rules_verified_on": "2026-09-22",
+  "homepage": "https://boxvolumecalculator.com/data/",
+  "licence": {
+   "name": "CC BY 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/",
+   "attribution": "BoxVolumeCalculator (boxvolumecalculator.com), Carrier rules dataset"
+  },
+  "source_policy": "Every value comes from the carrier's or the seller's own page or PDF. Each section lists its sources.",
+  "units": "Lengths in inches, volumes in cubic inches, weights in pounds, divisors in in³/lb or cm³/kg, money in USD.",
+  "warning": "Carriers change rules, usually in January and July. Check the source before you rely on a value."
+ },
+ "changes": [
+  {
+   "id": "change-1",
+   "date": "2026-07-12",
+   "carrier": "USPS",
+   "title": "Dimensional weight divisor cut from 166 to 139",
+   "summary": "Applies to Priority Mail Express, Priority Mail, USPS Ground Advantage and Parcel Select, at both retail and commercial prices. The 1,728 in³ threshold below which USPS charges actual weight did not change.",
+   "sources": [
+    {
+     "url": "https://about.usps.com/postal-bulletin/2026/pb22705/html/updt_001.htm",
+     "title": "USPS Postal Bulletin 22705 — DMM Revision: dimensional weight"
+    },
+    {
+     "url": "https://pe.usps.com/text/dmm300/223.htm",
+     "title": "USPS DMM 223 (Priority Mail: DIM weight, cubic, nonstandard fees)"
+    },
+    {
+     "url": "https://pe.usps.com/text/dmm300/283.htm",
+     "title": "USPS DMM 283 (Ground Advantage — Commercial, cubic)"
+    }
+   ],
+   "link": "https://boxvolumecalculator.com/dim-weight-rule-changes.html#change-1"
+  },
+  {
+   "id": "change-2",
+   "date": "2026-04-17",
+   "carrier": "Amazon FBA",
+   "title": "3.5% fuel and logistics surcharge applied to FBA fees",
+   "summary": "Applies to FBA in the US and Canada and to Remote Fulfillment with FBA. It is a percentage on the fulfilment fee, not a change to a size tier or divisor.",
+   "sources": [
+    {
+     "url": "https://sellercentral.amazon.com/help/hub/reference/external/GABBX6GZPA8MSZGW",
+     "title": "Amazon — 2026 US FBA fulfillment fee changes"
+    }
+   ],
+   "link": "https://boxvolumecalculator.com/dim-weight-rule-changes.html#change-2"
+  },
+  {
+   "id": "change-3",
+   "date": "2026-01-15",
+   "carrier": "Amazon FBA",
+   "title": "2026 US fulfilment fee changes take effect",
+   "summary": "Fee amounts and weight bands change; the size tier definitions and the ÷139 dimensional weight rule did not.",
+   "sources": [
+    {
+     "url": "https://sellercentral.amazon.com/help/hub/reference/external/GABBX6GZPA8MSZGW",
+     "title": "Amazon — 2026 US FBA fulfillment fee changes"
+    },
+    {
+     "url": "https://sellercentral.amazon.com/help/hub/reference/external/G201411300",
+     "title": "Amazon — 2026 US referral and FBA fee changes summary"
+    }
+   ],
+   "link": "https://boxvolumecalculator.com/dim-weight-rule-changes.html#change-3"
+  },
+  {
+   "id": "change-4",
+   "date": "2026-01-05",
+   "carrier": "FedEx",
+   "title": "2026 Service Guide and surcharge changes take effect",
+   "summary": "Additional Handling — Dimension and Oversize amounts rise. The size thresholds that trigger them did not change.",
+   "sources": [
+    {
+     "url": "https://www.fedex.com/content/dam/fedex/us-united-states/services/Service_Guide_2026.pdf",
+     "title": "FedEx Service Guide 2026"
+    },
+    {
+     "url": "https://www.fedex.com/content/dam/fedex/us-united-states/services/surcharge_and_fee_changes_2026.pdf",
+     "title": "FedEx 2026 surcharge and fee changes"
+    }
+   ],
+   "link": "https://boxvolumecalculator.com/dim-weight-rule-changes.html#change-4"
+  },
+  {
+   "id": "change-5",
+   "date": "2025-08-18",
+   "carrier": "UPS",
+   "title": "Each fraction of an inch rounds up to the next whole inch",
+   "summary": "UPS announced this on its shipping costs page before the change. Its example: “if the length of a package is 11.1 inches, that package will be deemed to have a length of 12 inches”. The change started on 18 August 2025, the same day as the FedEx change. Before it, UPS rounded each measurement to the nearest whole number. The guide effective 23 December 2024 reads “1.00 to 1.49 will be considered 1”. The 2026 guide reads as quoted.",
+   "sources": [
+    {
+     "url": "https://assets.ups.com/adobe/assets/urn:aaid:aem:47caed8a-c6fe-41e9-b98f-63f89d3d3f6c/original/as/retail-rates-us-en.pdf",
+     "title": "UPS 2026 Rate and Service Guide (Retail Rates)"
+    },
+    {
+     "url": "https://www.ups.com/assets/resources/webcontent/en_US/retail_rates.pdf",
+     "title": "UPS Retail Rate and Service Guide (effective 23 December 2024)"
+    },
+    {
+     "url": "https://www.ups.com/us/en/support/shipping-support/shipping-costs-rates",
+     "title": "UPS — Shipping costs and rates (announcement page)"
+    },
+    {
+     "url": "https://www.supplychaindive.com/news/ups-dimensional-weight-rounding-change/756929/",
+     "title": "Supply Chain Dive, 6 Aug 2025 — UPS matches FedEx with dimensional weight change"
+    }
+   ],
+   "link": "https://boxvolumecalculator.com/dim-weight-rule-changes.html#change-5"
+  },
+  {
+   "id": "change-6",
+   "date": "2025-08-18",
+   "carrier": "FedEx",
+   "title": "Each fraction of an inch rounds up to the next whole inch",
+   "summary": "Stated in the FedEx Service Guide. But the FedEx summary page still says to round to the nearest whole inch — see the contradictions section below.",
+   "sources": [
+    {
+     "url": "https://www.fedex.com/content/dam/fedex/us-united-states/services/Service_Guide_2026.pdf",
+     "title": "FedEx Service Guide 2026"
+    },
+    {
+     "url": "https://www.fedex.com/en-us/shipping/packaging/what-is-dimensional-weight.html",
+     "title": "FedEx — What is dimensional weight"
+    }
+   ],
+   "link": "https://boxvolumecalculator.com/dim-weight-rule-changes.html#change-6"
+  }
+ ]
+}

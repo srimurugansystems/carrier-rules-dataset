@@ -1,0 +1,138 @@
+{
+ "meta": {
+  "name": "Carrier rules dataset: places where carrier documents disagree",
+  "version": "2026.11.04",
+  "published": "2026-11-04",
+  "rules_verified_on": "2026-09-22",
+  "homepage": "https://boxvolumecalculator.com/data/",
+  "licence": {
+   "name": "CC BY 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/",
+   "attribution": "BoxVolumeCalculator (boxvolumecalculator.com), Carrier rules dataset"
+  },
+  "source_policy": "Every value comes from the carrier's or the seller's own page or PDF. Each section lists its sources.",
+  "units": "Lengths in inches, volumes in cubic inches, weights in pounds, divisors in in³/lb or cm³/kg, money in USD.",
+  "warning": "Carriers change rules, usually in January and July. Check the source before you rely on a value."
+ },
+ "items": [
+  {
+   "id": "fedex-rounding",
+   "carrier": "FedEx",
+   "topic": "Rounding of package dimensions",
+   "a": {
+    "says": "Any fraction of an inch is rounded up to the next-higher inch.",
+    "doc": "FedEx Service Guide 2026, p. 135",
+    "url": "https://www.fedex.com/content/dam/fedex/us-united-states/services/Service_Guide_2026.pdf"
+   },
+   "b": {
+    "says": "Round each measurement to the nearest whole inch.",
+    "doc": "FedEx: What is dimensional weight",
+    "url": "https://www.fedex.com/en-us/shipping/packaging/what-is-dimensional-weight.html"
+   },
+   "we_use": "Round up. The Service Guide is the contract document.",
+   "impact": "A 12.3 in side bills as 13 in, not 12 in. On a box near a DIM limit, this adds 1 lb or more."
+  },
+  {
+   "id": "ups-divisor-framing",
+   "carrier": "UPS",
+   "topic": "Why there are two DIM divisors",
+   "a": {
+    "says": "139 for Daily Rates and 166 for Retail Rates (by rate type).",
+    "doc": "UPS: Shipping dimensions and weight",
+    "url": "https://www.ups.com/us/en/support/shipping-support/shipping-dimensions-weight"
+   },
+   "b": {
+    "says": "166 for domestic and 139 for export (by destination).",
+    "doc": "UPS 2026 Rate and Service Guide (Retail Rates)",
+    "url": "https://assets.ups.com/adobe/assets/urn:aaid:aem:47caed8a-c6fe-41e9-b98f-63f89d3d3f6c/original/as/retail-rates-us-en.pdf"
+   },
+   "we_use": "139 for Daily Rates, 166 for Retail Rates (domestic).",
+   "impact": "The numbers agree. The reason differs, so a support answer and an invoice can seem to disagree."
+  },
+  {
+   "id": "usps-nonrect",
+   "carrier": "USPS",
+   "topic": "DIM divisor for nonrectangular parcels",
+   "a": {
+    "says": "Priority Mail divides the volume of a nonrectangular parcel by 166.",
+    "doc": "USPS DMM 223 §1.4.3",
+    "url": "https://pe.usps.com/text/dmm300/223.htm"
+   },
+   "b": {
+    "says": "Ground Advantage (commercial) divides the volume of a nonrectangular parcel by 139.",
+    "doc": "USPS DMM 283 §1.4.3",
+    "url": "https://pe.usps.com/text/dmm300/283.htm"
+   },
+   "we_use": "166 for Priority Mail, 139 for Ground Advantage. Rectangular parcels use 139 for both.",
+   "impact": "The same tube or bag bills at a different DIM weight with each service."
+  },
+  {
+   "id": "usps-small-fr-outside",
+   "carrier": "USPS",
+   "topic": "Outside length of the Small Flat Rate Box",
+   "a": {
+    "says": "Outside: 8 1/16 × 5 7/16 × 1 3/4 in. Inside: 8 5/8 × 5 3/8 × 1 5/8 in.",
+    "doc": "USPS: Priority Mail (Flat Rate box sizes)",
+    "url": "https://www.usps.com/ship/priority-mail.htm"
+   },
+   "b": {
+    "says": "8-11/16 × 5-7/16 × 1-3/4 in.",
+    "doc": "The Postal Store: Priority Mail Flat Rate Small Box",
+    "url": "https://store.usps.com/store/results/shipping-supplies-boxes/boxes/_/N-u9qwm0Zyz4qdp"
+   },
+   "we_use": "8 11/16 in. An outside length of 8 1/16 in is shorter than the inside length, so it is a typo.",
+   "impact": "Small. It matters if you check that a box fits in a mailbox or a locker."
+  },
+  {
+   "id": "usps-medium-fr2-outside",
+   "carrier": "USPS",
+   "topic": "Outside length of the Medium Flat Rate Box 2 (side-loading)",
+   "a": {
+    "says": "Outside: 14 × 12 × 3 1/2 in.",
+    "doc": "USPS: Priority Mail (Flat Rate box sizes)",
+    "url": "https://www.usps.com/ship/priority-mail.htm"
+   },
+   "b": {
+    "says": "14-1/8 × 12 × 3-1/2 in.",
+    "doc": "The Postal Store: Priority Mail Flat Rate Side-Loading Medium Box",
+    "url": "https://store.usps.com/store/results/shipping-supplies-boxes/boxes/_/N-u9qwm0Zyz4qdp"
+   },
+   "we_use": "14 in, the Priority Mail page value. We show both.",
+   "impact": "1/8 in. It can matter for a tight fit in a shelf or a locker."
+  },
+  {
+   "id": "fedex-large-box",
+   "carrier": "FedEx",
+   "topic": "Size and weight limit of the FedEx Large Box",
+   "a": {
+    "says": "12 3/8 × 3 × 17 1/2 in. One Rate boxes must weigh less than 50 lb.",
+    "doc": "FedEx One Rate (US)",
+    "url": "https://www.fedex.com/en-us/shipping/one-rate.html"
+   },
+   "b": {
+    "says": "Inside: 17.88 × 12.38 × 3 in. Maximum weight 20 lb.",
+    "doc": "FedEx Large Box (FedEx Dominican Republic site)",
+    "url": "https://www.fedex.com/en-do/shipping/packaging/large-box.html"
+   },
+   "we_use": "The US One Rate values, because the comparator uses US services.",
+   "impact": "3/8 in of length, and a weight limit of 20 lb or 50 lb, depending on the page."
+  },
+  {
+   "id": "homedepot-xl",
+   "carrier": "The Home Depot",
+   "topic": "Size of the Extra Large Moving Box (model 1001015)",
+   "a": {
+    "says": "22 × 21 × 22 in.",
+    "doc": "Home Depot product page",
+    "url": "https://www.homedepot.com/p/The-Home-Depot-22-in-L-x-21-in-W-x-22-in-D-Extra-Large-Moving-Box-1001015/202518472"
+   },
+   "b": {
+    "says": "22 × 22 × 21 1/2 in.",
+    "doc": "Home Depot questions page for the same model",
+    "url": "https://www.homedepot.com/p/questions/The-Home-Depot-1001015-22-in-L-x-22-in-W-x-21-1-2-in-D-Extra-Large-Moving-Box/202518472/2"
+   },
+   "we_use": "22 × 21 × 22 in, the product page value.",
+   "impact": "The volume differs by about 2%."
+  }
+ ]
+}

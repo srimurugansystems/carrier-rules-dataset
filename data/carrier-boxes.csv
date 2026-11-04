@@ -1,0 +1,65 @@
+seller,type,name,size_basis,length_in,width_in,height_in,outside_length_in,outside_width_in,outside_height_in,max_lb,price_usd,price_commercial_usd,source_url,checked_on
+USPS,Flat Rate,Small Flat Rate Box,inside,8.625,5.375,1.625,8.6875,5.4375,1.75,70,14.65,12.95,https://www.usps.com/ship/priority-mail.htm,2026-11-04
+USPS,Flat Rate,Medium Flat Rate Box 1 (top-loading),inside,11,8.5,5.5,11.25,8.75,6,70,25.8,22.02,https://www.usps.com/ship/priority-mail.htm,2026-11-04
+USPS,Flat Rate,Medium Flat Rate Box 2 (side-loading),inside,13.625,11.875,3.375,14,12,3.5,70,25.8,22.02,https://www.usps.com/ship/priority-mail.htm,2026-11-04
+USPS,Flat Rate,Large Flat Rate Box,inside,12,11.75,5.5,12.25,12,6,70,36.1,32.75,https://www.usps.com/ship/priority-mail.htm,2026-11-04
+USPS,Flat Rate,APO/FPO/DPO Flat Rate Box,inside,12,11.75,5.5,12.25,12,6,70,34.65,31.34,https://www.usps.com/ship/priority-mail.htm,2026-11-04
+USPS,Flat Rate,Large Flat Rate Board Game Box,inside,23.6875,11.75,3,24.0625,11.875,3.125,70,36.1,32.75,https://www.usps.com/ship/priority-mail.htm,2026-11-04
+USPS,Priority Mail,Priority Mail Small Box,as listed,9.4375,6.4375,2.1875,,,,70,,,https://store.usps.com/store/results/shipping-supplies-boxes/boxes/_/N-u9qwm0Zyz4qdp,2026-11-04
+USPS,Priority Mail,Priority Mail Medium Cube-Shaped Box,as listed,7.25,7.25,6.5,,,,70,,,https://store.usps.com/store/results/shipping-supplies-boxes/boxes/_/N-u9qwm0Zyz4qdp,2026-11-04
+USPS,Priority Mail,Priority Mail Shoe Box,as listed,14.875,5.25,7.375,,,,70,,,https://store.usps.com/store/results/shipping-supplies-boxes/boxes/_/N-u9qwm0Zyz4qdp,2026-11-04
+USPS,Priority Mail,Priority Mail Side-Loading Medium Box,as listed,13.6875,12,2.875,,,,70,,,https://store.usps.com/store/results/shipping-supplies-boxes/boxes/_/N-u9qwm0Zyz4qdp,2026-11-04
+USPS,Priority Mail,Priority Mail Side-Loading Large Box,as listed,15,12,3.125,,,,70,,,https://store.usps.com/store/results/shipping-supplies-boxes/boxes/_/N-u9qwm0Zyz4qdp,2026-11-04
+USPS,Priority Mail,Priority Mail Large Box,as listed,12.25,12,8.5,,,,70,,,https://store.usps.com/store/results/shipping-supplies-boxes/boxes/_/N-u9qwm0Zyz4qdp,2026-11-04
+USPS,Priority Mail,Priority Mail Small Tube Box (dual-use),as listed,25.5625,6,5.25,,,,70,,,https://store.usps.com/store/results/shipping-supplies-boxes/boxes/_/N-u9qwm0Zyz4qdp,2026-11-04
+USPS,Priority Mail,Priority Mail Express Medium Box,as listed,11.75,8.75,5.75,,,,70,,,https://store.usps.com/store/results/shipping-supplies-boxes/boxes/_/N-u9qwm0Zyz4qdp,2026-11-04
+USPS,Priority Mail,Priority Mail Express Side-Loading Medium Box,as listed,15,12,3.125,,,,70,,,https://store.usps.com/store/results/shipping-supplies-boxes/boxes/_/N-u9qwm0Zyz4qdp,2026-11-04
+UPS,UPS packaging,UPS Express Box Small,as listed,13,11,2,,,,,,,https://www.ups.com/worldshiphelp/WSA/ENG/AppHelp/mergedProjects/CORE/Codes/Package_Type_Codes.htm,2026-11-04
+UPS,UPS packaging,UPS Express Box Medium,as listed,15,11,3,,,,,,,https://www.ups.com/worldshiphelp/WSA/ENG/AppHelp/mergedProjects/CORE/Codes/Package_Type_Codes.htm,2026-11-04
+UPS,UPS packaging,UPS Express Box Large,as listed,18,13,3,,,,30,,,https://www.ups.com/worldshiphelp/WSA/ENG/AppHelp/mergedProjects/CORE/Codes/Package_Type_Codes.htm,2026-11-04
+UPS,UPS packaging,UPS Tube,as listed,38,6,6,,,,,,,https://www.ups.com/worldshiphelp/WSA/ENG/AppHelp/mergedProjects/CORE/Codes/Package_Type_Codes.htm,2026-11-04
+UPS,UPS packaging,UPS 10 KG Box,as listed,17,13,11,,,,22,,,https://www.ups.com/worldshiphelp/WSA/ENG/AppHelp/mergedProjects/CORE/Codes/Package_Type_Codes.htm,2026-11-04
+UPS,UPS packaging,UPS 25 KG Box,as listed,19,17,14,,,,55,,,https://www.ups.com/worldshiphelp/WSA/ENG/AppHelp/mergedProjects/CORE/Codes/Package_Type_Codes.htm,2026-11-04
+UPS,UPS packaging,UPS Pak,as listed,16,13,1,,,,,,,https://www.ups.com/worldshiphelp/WSA/ENG/AppHelp/mergedProjects/CORE/Codes/Package_Type_Codes.htm,2026-11-04
+FedEx,One Rate,FedEx Extra Small Box,as listed,7.25,2.5,4.6875,,,,50,13.4,,https://www.fedex.com/en-us/shipping/one-rate.html,2026-11-04
+FedEx,One Rate,FedEx Small Box (1),as listed,10.875,1.5,12.375,,,,50,19.55,,https://www.fedex.com/en-us/shipping/one-rate.html,2026-11-04
+FedEx,One Rate,FedEx Small Box (2),as listed,8.75,2.625,11.25,,,,50,19.55,,https://www.fedex.com/en-us/shipping/one-rate.html,2026-11-04
+FedEx,One Rate,FedEx Medium Box (1),as listed,11.5,2.375,13.25,,,,50,24.35,,https://www.fedex.com/en-us/shipping/one-rate.html,2026-11-04
+FedEx,One Rate,FedEx Medium Box (2),as listed,8.75,4.375,11.25,,,,50,24.35,,https://www.fedex.com/en-us/shipping/one-rate.html,2026-11-04
+FedEx,One Rate,FedEx Large Box (1),as listed,12.375,3,17.5,,,,50,32.05,,https://www.fedex.com/en-us/shipping/one-rate.html,2026-11-04
+FedEx,One Rate,FedEx Large Box (2),as listed,8.75,7.75,11.25,,,,50,32.05,,https://www.fedex.com/en-us/shipping/one-rate.html,2026-11-04
+FedEx,One Rate,FedEx Extra Large Box (1),as listed,11.875,10.75,11,,,,50,42.75,,https://www.fedex.com/en-us/shipping/one-rate.html,2026-11-04
+FedEx,One Rate,FedEx Extra Large Box (2),as listed,15.75,14.125,6,,,,50,42.75,,https://www.fedex.com/en-us/shipping/one-rate.html,2026-11-04
+FedEx,One Rate,FedEx Tube,as listed,6,6,38,,,,50,42.75,,https://www.fedex.com/en-us/shipping/one-rate.html,2026-11-04
+FedEx,FedEx Office,Box 8 x 8 x 8,as listed,8,8,8,,,,,2.0,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 12 x 9 x 6,as listed,12,9,6,,,,,2.25,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 12 x 3 x 17.5,as listed,12,3,17.5,,,,,2.5,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 11 x 11 x 11,as listed,11,11,11,,,,,2.75,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 13 x 9 x 11,as listed,13,9,11,,,,,3.0,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 17 x 17 x 7,as listed,17,17,7,,,,,3.5,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 12 x 12 x 18,as listed,12,12,18,,,,,4.0,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 14 x 14 x 14,as listed,14,14,14,,,,,4.0,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 16 x 16 x 16,as listed,16,16,16,,,,,4.5,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 20 x 20 x 12,as listed,20,20,12,,,,,4.75,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 23 x 17 x 12,as listed,23,17,12,,,,,5.0,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 20 x 20 x 20,as listed,20,20,20,,,,,6.75,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 22 x 22 x 22,as listed,22,22,22,,,,,7.25,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 18 x 13 x 11.75 double wall,as listed,18,13,11.75,,,,,7.25,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 24 x 24 x 18 double wall,as listed,24,24,18,,,,,10.25,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 24 x 24 x 24 double wall,as listed,24,24,24,,,,,12.25,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+FedEx,FedEx Office,Box 28 x 28 x 28 double wall,as listed,28,28,28,,,,,15.25,,https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html,2026-11-04
+U-Haul,Moving box,Book Box,as listed,12,12,12,,,,,,,https://www.uhaul.com/MovingSupplies/Boxes/Standard-Sized-Moving-Boxes/Book-Box/?id=3161,2026-09-22
+U-Haul,Moving box,Small Moving Box,as listed,16.375,12.625,12.625,,,,,,,https://www.uhaul.com/MovingSupplies/Boxes/Standard-Sized-Moving-Boxes/Small-Moving-Box/?id=3245,2026-09-22
+U-Haul,Moving box,Medium Moving Box,as listed,18.125,18,16,,,,,,,https://www.uhaul.com/MovingSupplies/Boxes/Standard-Sized-Moving-Boxes/Medium-Moving-Box/?id=2793,2026-09-22
+U-Haul,Moving box,Large Moving Box,as listed,18,18,24,,,,,,,https://www.uhaul.com/MovingSupplies/Boxes/Standard-Sized-Moving-Boxes/Large-Moving-Box/?id=2753,2026-09-22
+U-Haul,Moving box,Extra-Large Moving Box,as listed,24,18,24,,,,,,,https://www.uhaul.com/MovingSupplies/Boxes/Standard-Sized-Moving-Boxes/Extra-Large-Moving-Box/?id=3588,2026-09-22
+The Home Depot,Moving box,Extra-Small Moving Box (XSMBOX),as listed,15,12,10,,,,,,,https://www.homedepot.com/p/reviews/The-Home-Depot-Extra-Small-Moving-Shipping-and-Packing-Box-15-in-L-x-12-in-W-x-10-in-XSMBOX/303635806/1,2026-11-04
+The Home Depot,Moving box,Small Moving Box (1001004),as listed,16,12,12,,,,,,,https://www.homedepot.com/p/The-Home-Depot-16-in-L-x-12-in-W-x-12-in-D-Small-Moving-Box-1001004/202029361,2026-11-04
+The Home Depot,Moving box,Medium Moving Box (1001005),as listed,18,18,16,,,,,,,https://www.homedepot.com/p/The-Home-Depot-Medium-Moving-Box-18-in-L-x-18-in-W-x-16-in-D-1001005/202029360,2026-11-04
+The Home Depot,Moving box,Large Moving Box (1001006),as listed,18,18,24,,,,,,,https://www.homedepot.com/p/The-Home-Depot-18-in-x-18-in-x-24-in-65-lb-Large-Box-1001006/202029359,2026-11-04
+The Home Depot,Moving box,Extra Large Moving Box (1001015),as listed,22,21,22,,,,,,,https://www.homedepot.com/p/The-Home-Depot-22-in-L-x-21-in-W-x-22-in-D-Extra-Large-Moving-Box-1001015/202518472,2026-11-04
+Lowe’s,Moving box,X-Small Heavy Duty Moving Box,as listed,15,12,10,,,,,,,https://www.lowes.com/collections/Lowe-s-12-in-W-x-10-in-H-x-15-in-D-X-small-Heavy-Duty-Moving-Box-50-Pack/GR_6832,2026-11-04
+Lowe’s,Moving box,Classic Small Moving Box,as listed,16,12,12,,,,,,,https://www.lowes.com/pd/Lowe-s-16-in-W-x-12-in-H-x-12-in-D-Classic-Small-Cardboard-Moving-Box-with-Handle-Holes/5015199531,2026-11-04
+Lowe’s,Moving box,Classic Medium Moving Box,as listed,18,18,16,,,,,,,https://www.lowes.com/pd/18-in-W-x-16-in-H-x-18-in-D-Moving-Box-Classic-Medium-Cardboard-Moving-Boxes-with-Handle-Holes/3265417,2026-11-04
+Lowe’s,Moving box,Classic Large Moving Box,as listed,24,18,18,,,,,,,https://www.lowes.com/pd/Lowe-s-24-in-W-x-18-in-H-x-18-in-D-Classic-Large-Cardboard-Moving-Box-with-Handle-Holes/5015199527,2026-11-04
+Lowe’s,Moving box,Classic X-Large Moving Box,as listed,22,22,21.5,,,,,,,https://www.lowes.com/pd/Lowe-s-22-in-W-x-22-in-H-x-21-5-in-D-Moving-Box-Classic-X-large-Cardboard-Moving-Boxes-with-Handle-Holes/50342442,2026-11-04

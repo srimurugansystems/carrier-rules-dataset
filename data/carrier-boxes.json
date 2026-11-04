@@ -1,0 +1,962 @@
+{
+ "meta": {
+  "name": "Carrier rules dataset: carrier and moving box sizes",
+  "version": "2026.11.04",
+  "published": "2026-11-04",
+  "rules_verified_on": "2026-09-22",
+  "homepage": "https://boxvolumecalculator.com/data/",
+  "licence": {
+   "name": "CC BY 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/",
+   "attribution": "BoxVolumeCalculator (boxvolumecalculator.com), Carrier rules dataset"
+  },
+  "source_policy": "Every value comes from the carrier's or the seller's own page or PDF. Each section lists its sources.",
+  "units": "Lengths in inches, volumes in cubic inches, weights in pounds, divisors in in³/lb or cm³/kg, money in USD.",
+  "warning": "Carriers change rules, usually in January and July. Check the source before you rely on a value."
+ },
+ "carrier_boxes": {
+  "checked_on": "2026-11-04",
+  "checked_label": "4 November 2026",
+  "usps": {
+   "sources": {
+    "pm": {
+     "title": "USPS Priority Mail (Flat Rate box sizes and prices)",
+     "url": "https://www.usps.com/ship/priority-mail.htm"
+    },
+    "store": {
+     "title": "The Postal Store: free boxes",
+     "url": "https://store.usps.com/store/results/shipping-supplies-boxes/boxes/_/N-u9qwm0Zyz4qdp"
+    },
+    "minmax": {
+     "title": "USPS Postal Explorer: minimum and maximum sizes",
+     "url": "https://pe.usps.com/businessmail101?ViewName=MinMax"
+    }
+   },
+   "max_lb": 70,
+   "flat_rate": [
+    {
+     "id": "small",
+     "name": "Small Flat Rate Box",
+     "outside": [
+      8.6875,
+      5.4375,
+      1.75
+     ],
+     "inside": [
+      8.625,
+      5.375,
+      1.625
+     ],
+     "retail": 14.65,
+     "commercial": 12.95,
+     "src": "pm",
+     "conflict": "The USPS Priority Mail page gives the outside length as 8 1/16 in. This is shorter than the inside length (8 5/8 in), so it cannot be correct. The Postal Store gives 8 11/16 in. We use 8 11/16 in."
+    },
+    {
+     "id": "medium1",
+     "name": "Medium Flat Rate Box 1 (top-loading)",
+     "outside": [
+      11.25,
+      8.75,
+      6
+     ],
+     "inside": [
+      11,
+      8.5,
+      5.5
+     ],
+     "retail": 25.8,
+     "commercial": 22.02,
+     "src": "pm"
+    },
+    {
+     "id": "medium2",
+     "name": "Medium Flat Rate Box 2 (side-loading)",
+     "outside": [
+      14,
+      12,
+      3.5
+     ],
+     "inside": [
+      13.625,
+      11.875,
+      3.375
+     ],
+     "retail": 25.8,
+     "commercial": 22.02,
+     "src": "pm",
+     "conflict": "The Postal Store lists this box as 14 1/8 × 12 × 3 1/2 in. The USPS Priority Mail page gives 14 × 12 × 3 1/2 in outside. We show the Priority Mail page value."
+    },
+    {
+     "id": "large",
+     "name": "Large Flat Rate Box",
+     "outside": [
+      12.25,
+      12,
+      6
+     ],
+     "inside": [
+      12,
+      11.75,
+      5.5
+     ],
+     "retail": 36.1,
+     "commercial": 32.75,
+     "src": "pm"
+    },
+    {
+     "id": "apo",
+     "name": "APO/FPO/DPO Flat Rate Box",
+     "outside": [
+      12.25,
+      12,
+      6
+     ],
+     "inside": [
+      12,
+      11.75,
+      5.5
+     ],
+     "retail": 34.65,
+     "commercial": 31.34,
+     "src": "pm"
+    },
+    {
+     "id": "game",
+     "name": "Large Flat Rate Board Game Box",
+     "outside": [
+      24.0625,
+      11.875,
+      3.125
+     ],
+     "inside": [
+      23.6875,
+      11.75,
+      3
+     ],
+     "retail": 36.1,
+     "commercial": 32.75,
+     "src": "pm"
+    }
+   ],
+   "priority": [
+    {
+     "name": "Priority Mail Small Box",
+     "code": "P_O_1096L",
+     "dims": [
+      9.4375,
+      6.4375,
+      2.1875
+     ]
+    },
+    {
+     "name": "Priority Mail Medium Cube-Shaped Box",
+     "code": "P_O_BOX4",
+     "dims": [
+      7.25,
+      7.25,
+      6.5
+     ]
+    },
+    {
+     "name": "Priority Mail Shoe Box",
+     "code": "P_0_SHOEBOX",
+     "dims": [
+      14.875,
+      5.25,
+      7.375
+     ]
+    },
+    {
+     "name": "Priority Mail Side-Loading Medium Box",
+     "code": "P_O_1092",
+     "dims": [
+      13.6875,
+      12,
+      2.875
+     ]
+    },
+    {
+     "name": "Priority Mail Side-Loading Large Box",
+     "code": "P_O_1095",
+     "dims": [
+      15,
+      12,
+      3.125
+     ]
+    },
+    {
+     "name": "Priority Mail Large Box",
+     "code": "P_O_BOX7",
+     "dims": [
+      12.25,
+      12,
+      8.5
+     ]
+    },
+    {
+     "name": "Priority Mail Small Tube Box (dual-use)",
+     "code": "P_O_1098S",
+     "dims": [
+      25.5625,
+      6,
+      5.25
+     ]
+    },
+    {
+     "name": "Priority Mail Express Medium Box",
+     "code": "P_EMBOX1",
+     "dims": [
+      11.75,
+      8.75,
+      5.75
+     ]
+    },
+    {
+     "name": "Priority Mail Express Side-Loading Medium Box",
+     "code": "P_O_1093",
+     "dims": [
+      15,
+      12,
+      3.125
+     ]
+    }
+   ]
+  },
+  "ups": {
+   "sources": {
+    "codes": {
+     "title": "UPS WorldShip help: Package Type Codes",
+     "url": "https://www.ups.com/worldshiphelp/WSA/ENG/AppHelp/mergedProjects/CORE/Codes/Package_Type_Codes.htm"
+    },
+    "simple": {
+     "title": "UPS Simple Rate (flat rate shipping)",
+     "url": "https://www.ups.com/us/en/support/shipping-support/shipping-costs-rates/flat-rate-shipping"
+    }
+   },
+   "packaging": [
+    {
+     "name": "UPS Express Box Small",
+     "code": "26",
+     "dims": [
+      13,
+      11,
+      2
+     ],
+     "max_lb": null
+    },
+    {
+     "name": "UPS Express Box Medium",
+     "code": "27",
+     "dims": [
+      15,
+      11,
+      3
+     ],
+     "max_lb": null
+    },
+    {
+     "name": "UPS Express Box Large",
+     "code": "28",
+     "dims": [
+      18,
+      13,
+      3
+     ],
+     "max_lb": 30
+    },
+    {
+     "name": "UPS Tube",
+     "code": "TB",
+     "dims": [
+      38,
+      6,
+      6
+     ],
+     "max_lb": null
+    },
+    {
+     "name": "UPS 10 KG Box",
+     "code": "10",
+     "dims": [
+      17,
+      13,
+      11
+     ],
+     "max_lb": 22,
+     "note": "10 kg"
+    },
+    {
+     "name": "UPS 25 KG Box",
+     "code": "25",
+     "dims": [
+      19,
+      17,
+      14
+     ],
+     "max_lb": 55,
+     "note": "25 kg"
+    },
+    {
+     "name": "UPS Pak",
+     "code": "PK",
+     "dims": [
+      16,
+      13,
+      1
+     ],
+     "max_lb": null,
+     "flat": true
+    }
+   ],
+   "simple_rate": [
+    {
+     "name": "Extra Small",
+     "lo": 1,
+     "hi": 100,
+     "examples": [
+      [
+       4,
+       4,
+       4
+      ],
+      [
+       6,
+       4,
+       4
+      ],
+      [
+       8,
+       6,
+       2
+      ]
+     ]
+    },
+    {
+     "name": "Small",
+     "lo": 101,
+     "hi": 250,
+     "examples": [
+      [
+       6,
+       6,
+       6
+      ],
+      [
+       8,
+       6,
+       5
+      ],
+      [
+       12,
+       9,
+       2
+      ]
+     ]
+    },
+    {
+     "name": "Medium",
+     "lo": 251,
+     "hi": 650,
+     "examples": [
+      [
+       8,
+       8,
+       8
+      ],
+      [
+       12,
+       9,
+       6
+      ],
+      [
+       13,
+       11,
+       2
+      ]
+     ]
+    },
+    {
+     "name": "Large",
+     "lo": 651,
+     "hi": 1050,
+     "examples": [
+      [
+       10,
+       10,
+       10
+      ],
+      [
+       12,
+       12,
+       7
+      ],
+      [
+       15,
+       11,
+       6
+      ]
+     ]
+    },
+    {
+     "name": "Extra Large",
+     "lo": 1051,
+     "hi": 1728,
+     "examples": [
+      [
+       12,
+       12,
+       12
+      ],
+      [
+       16,
+       12,
+       9
+      ],
+      [
+       18,
+       12,
+       6
+      ]
+     ]
+    }
+   ],
+   "simple_max_lb": 50
+  },
+  "fedex": {
+   "sources": {
+    "onerate": {
+     "title": "FedEx One Rate",
+     "url": "https://www.fedex.com/en-us/shipping/one-rate.html"
+    },
+    "office": {
+     "title": "FedEx: boxes for packing, shipping and moving",
+     "url": "https://www.fedex.com/en-us/shipping/packing/supplies/boxes.html"
+    }
+   },
+   "one_rate_max_lb": 50,
+   "one_rate": [
+    {
+     "name": "FedEx Extra Small Box",
+     "variants": [
+      [
+       7.25,
+       2.5,
+       4.6875
+      ]
+     ],
+     "price_2day": 13.4
+    },
+    {
+     "name": "FedEx Small Box",
+     "variants": [
+      [
+       10.875,
+       1.5,
+       12.375
+      ],
+      [
+       8.75,
+       2.625,
+       11.25
+      ]
+     ],
+     "price_2day": 19.55
+    },
+    {
+     "name": "FedEx Medium Box",
+     "variants": [
+      [
+       11.5,
+       2.375,
+       13.25
+      ],
+      [
+       8.75,
+       4.375,
+       11.25
+      ]
+     ],
+     "price_2day": 24.35
+    },
+    {
+     "name": "FedEx Large Box",
+     "variants": [
+      [
+       12.375,
+       3,
+       17.5
+      ],
+      [
+       8.75,
+       7.75,
+       11.25
+      ]
+     ],
+     "price_2day": 32.05
+    },
+    {
+     "name": "FedEx Extra Large Box",
+     "variants": [
+      [
+       11.875,
+       10.75,
+       11
+      ],
+      [
+       15.75,
+       14.125,
+       6
+      ]
+     ],
+     "price_2day": 42.75
+    },
+    {
+     "name": "FedEx Tube",
+     "variants": [
+      [
+       6,
+       6,
+       38
+      ]
+     ],
+     "price_2day": 42.75
+    }
+   ],
+   "office": [
+    {
+     "dims": [
+      8,
+      8,
+      8
+     ],
+     "box": 2.0,
+     "packed": 5.49,
+     "fragile": 13.49
+    },
+    {
+     "dims": [
+      12,
+      9,
+      6
+     ],
+     "box": 2.25,
+     "packed": 6.99,
+     "fragile": 14.49
+    },
+    {
+     "dims": [
+      12,
+      3,
+      17.5
+     ],
+     "box": 2.5,
+     "packed": null,
+     "fragile": null
+    },
+    {
+     "dims": [
+      11,
+      11,
+      11
+     ],
+     "box": 2.75,
+     "packed": 7.99,
+     "fragile": 17.49
+    },
+    {
+     "dims": [
+      13,
+      9,
+      11
+     ],
+     "box": 3.0,
+     "packed": 7.99,
+     "fragile": 17.49
+    },
+    {
+     "dims": [
+      17,
+      17,
+      7
+     ],
+     "box": 3.5,
+     "packed": 11.49,
+     "fragile": 19.99
+    },
+    {
+     "dims": [
+      12,
+      12,
+      18
+     ],
+     "box": 4.0,
+     "packed": 10.49,
+     "fragile": 17.99
+    },
+    {
+     "dims": [
+      14,
+      14,
+      14
+     ],
+     "box": 4.0,
+     "packed": 10.49,
+     "fragile": 17.99
+    },
+    {
+     "dims": [
+      16,
+      16,
+      16
+     ],
+     "box": 4.5,
+     "packed": 13.49,
+     "fragile": 21.39
+    },
+    {
+     "dims": [
+      20,
+      20,
+      12
+     ],
+     "box": 4.75,
+     "packed": 14.99,
+     "fragile": 23.99
+    },
+    {
+     "dims": [
+      23,
+      17,
+      12
+     ],
+     "box": 5.0,
+     "packed": 14.49,
+     "fragile": 23.99
+    },
+    {
+     "dims": [
+      20,
+      20,
+      20
+     ],
+     "box": 6.75,
+     "packed": 17.99,
+     "fragile": 26.99
+    },
+    {
+     "dims": [
+      22,
+      22,
+      22
+     ],
+     "box": 7.25,
+     "packed": 18.99,
+     "fragile": 27.99
+    },
+    {
+     "dims": [
+      18,
+      13,
+      11.75
+     ],
+     "box": 7.25,
+     "packed": 12.49,
+     "fragile": 19.49,
+     "heavy": true
+    },
+    {
+     "dims": [
+      24,
+      24,
+      18
+     ],
+     "box": 10.25,
+     "packed": 18.99,
+     "fragile": 25.99,
+     "heavy": true
+    },
+    {
+     "dims": [
+      24,
+      24,
+      24
+     ],
+     "box": 12.25,
+     "packed": 21.99,
+     "fragile": 30.99,
+     "heavy": true
+    },
+    {
+     "dims": [
+      28,
+      28,
+      28
+     ],
+     "box": 15.25,
+     "packed": 26.99,
+     "fragile": 34.99,
+     "heavy": true
+    }
+   ],
+   "specialty": [
+    {
+     "name": "Golf bag box",
+     "dims": [
+      15,
+      15,
+      48
+     ],
+     "box": 14.0
+    },
+    {
+     "name": "Golf club tube",
+     "dims": [
+      50,
+      9,
+      9
+     ],
+     "box": 7.75
+    },
+    {
+     "name": "Bike box",
+     "dims": [
+      54,
+      8,
+      28
+     ],
+     "box": 16.25
+    },
+    {
+     "name": "Guitar box",
+     "dims": [
+      20,
+      8,
+      50
+     ],
+     "box": 14.0
+    },
+    {
+     "name": "Small flat-panel TV box",
+     "dims": [
+      38,
+      8,
+      26
+     ],
+     "box": 15.0
+    },
+    {
+     "name": "Medium flat-panel TV box",
+     "dims": [
+      46,
+      8,
+      30
+     ],
+     "box": 20.25
+    },
+    {
+     "name": "Large flat-panel TV box",
+     "dims": [
+      56,
+      8,
+      36
+     ],
+     "box": 28.25
+    },
+    {
+     "name": "Laptop box with kit",
+     "dims": [
+      21,
+      16,
+      5
+     ],
+     "box": 20.25
+    }
+   ]
+  }
+ },
+ "moving_boxes": {
+  "brands": [
+   {
+    "id": "uhaul",
+    "name": "U-Haul",
+    "checked": "22 September 2026",
+    "note": "U-Haul gives one set of dimensions and its own cubic-feet figure for each box.",
+    "boxes": [
+     {
+      "cls": "Book/XS",
+      "name": "Book Box",
+      "dims": [
+       12,
+       12,
+       12
+      ],
+      "ft3_stated": 1.0,
+      "url": "https://www.uhaul.com/MovingSupplies/Boxes/Standard-Sized-Moving-Boxes/Book-Box/?id=3161"
+     },
+     {
+      "cls": "Small",
+      "name": "Small Moving Box",
+      "dims": [
+       16.375,
+       12.625,
+       12.625
+      ],
+      "ft3_stated": 1.5,
+      "url": "https://www.uhaul.com/MovingSupplies/Boxes/Standard-Sized-Moving-Boxes/Small-Moving-Box/?id=3245"
+     },
+     {
+      "cls": "Medium",
+      "name": "Medium Moving Box",
+      "dims": [
+       18.125,
+       18,
+       16
+      ],
+      "ft3_stated": 3.0,
+      "url": "https://www.uhaul.com/MovingSupplies/Boxes/Standard-Sized-Moving-Boxes/Medium-Moving-Box/?id=2793"
+     },
+     {
+      "cls": "Large",
+      "name": "Large Moving Box",
+      "dims": [
+       18,
+       18,
+       24
+      ],
+      "ft3_stated": 4.5,
+      "url": "https://www.uhaul.com/MovingSupplies/Boxes/Standard-Sized-Moving-Boxes/Large-Moving-Box/?id=2753"
+     },
+     {
+      "cls": "XL",
+      "name": "Extra-Large Moving Box",
+      "dims": [
+       24,
+       18,
+       24
+      ],
+      "ft3_stated": 6.0,
+      "url": "https://www.uhaul.com/MovingSupplies/Boxes/Standard-Sized-Moving-Boxes/Extra-Large-Moving-Box/?id=3588"
+     }
+    ]
+   },
+   {
+    "id": "homedepot",
+    "name": "The Home Depot",
+    "checked": "4 November 2026",
+    "note": "Home Depot gives the size in the product title as length × width × depth. Home Depot also sells newer multi-pack boxes in other sizes.",
+    "boxes": [
+     {
+      "cls": "Book/XS",
+      "name": "Extra-Small Moving Box (XSMBOX)",
+      "dims": [
+       15,
+       12,
+       10
+      ],
+      "url": "https://www.homedepot.com/p/reviews/The-Home-Depot-Extra-Small-Moving-Shipping-and-Packing-Box-15-in-L-x-12-in-W-x-10-in-XSMBOX/303635806/1"
+     },
+     {
+      "cls": "Small",
+      "name": "Small Moving Box (1001004)",
+      "dims": [
+       16,
+       12,
+       12
+      ],
+      "url": "https://www.homedepot.com/p/The-Home-Depot-16-in-L-x-12-in-W-x-12-in-D-Small-Moving-Box-1001004/202029361"
+     },
+     {
+      "cls": "Medium",
+      "name": "Medium Moving Box (1001005)",
+      "dims": [
+       18,
+       18,
+       16
+      ],
+      "url": "https://www.homedepot.com/p/The-Home-Depot-Medium-Moving-Box-18-in-L-x-18-in-W-x-16-in-D-1001005/202029360"
+     },
+     {
+      "cls": "Large",
+      "name": "Large Moving Box (1001006)",
+      "dims": [
+       18,
+       18,
+       24
+      ],
+      "url": "https://www.homedepot.com/p/The-Home-Depot-18-in-x-18-in-x-24-in-65-lb-Large-Box-1001006/202029359"
+     },
+     {
+      "cls": "XL",
+      "name": "Extra Large Moving Box (1001015)",
+      "dims": [
+       22,
+       21,
+       22
+      ],
+      "url": "https://www.homedepot.com/p/The-Home-Depot-22-in-L-x-21-in-W-x-22-in-D-Extra-Large-Moving-Box-1001015/202518472",
+      "conflict": "Home Depot gives two sizes for this box. The product page says 22 × 21 × 22 in. The questions page for the same model says 22 × 22 × 21 1/2 in. We show the product page size."
+     }
+    ]
+   },
+   {
+    "id": "lowes",
+    "name": "Lowe’s",
+    "checked": "4 November 2026",
+    "note": "Lowe’s gives the size in the product title as width × height × depth. We show it as length × width × height, longest side first.",
+    "boxes": [
+     {
+      "cls": "Book/XS",
+      "name": "X-Small Heavy Duty Moving Box",
+      "dims": [
+       15,
+       12,
+       10
+      ],
+      "url": "https://www.lowes.com/collections/Lowe-s-12-in-W-x-10-in-H-x-15-in-D-X-small-Heavy-Duty-Moving-Box-50-Pack/GR_6832"
+     },
+     {
+      "cls": "Small",
+      "name": "Classic Small Moving Box",
+      "dims": [
+       16,
+       12,
+       12
+      ],
+      "url": "https://www.lowes.com/pd/Lowe-s-16-in-W-x-12-in-H-x-12-in-D-Classic-Small-Cardboard-Moving-Box-with-Handle-Holes/5015199531"
+     },
+     {
+      "cls": "Medium",
+      "name": "Classic Medium Moving Box",
+      "dims": [
+       18,
+       18,
+       16
+      ],
+      "url": "https://www.lowes.com/pd/18-in-W-x-16-in-H-x-18-in-D-Moving-Box-Classic-Medium-Cardboard-Moving-Boxes-with-Handle-Holes/3265417"
+     },
+     {
+      "cls": "Large",
+      "name": "Classic Large Moving Box",
+      "dims": [
+       24,
+       18,
+       18
+      ],
+      "url": "https://www.lowes.com/pd/Lowe-s-24-in-W-x-18-in-H-x-18-in-D-Classic-Large-Cardboard-Moving-Box-with-Handle-Holes/5015199527"
+     },
+     {
+      "cls": "XL",
+      "name": "Classic X-Large Moving Box",
+      "dims": [
+       22,
+       22,
+       21.5
+      ],
+      "url": "https://www.lowes.com/pd/Lowe-s-22-in-W-x-22-in-H-x-21-5-in-D-Moving-Box-Classic-X-large-Cardboard-Moving-Boxes-with-Handle-Holes/50342442"
+     }
+    ]
+   }
+  ]
+ }
+}

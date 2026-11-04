@@ -1,0 +1,14 @@
+carrier_id,carrier,region,service_id,service,divisor_in3_per_lb,divisor_cm3_per_kg,dimension_rounding,note
+fedex_dom,FedEx,US Domestic,all,All US services,139,5000,each dimension up to the next whole inch,"139 in³/lb · (L×W×H in inches) ÷ 139, rounded up to the next lb"
+fedex_intl,FedEx,International,all,International services,139,5000,each dimension up to the next whole cm,"5,000 cm³/kg · (L×W×H in cm) ÷ 5,000, rounded up to the next kg"
+ups_dom,UPS,US Domestic,daily,Daily Rates (UPS account),139,5000,each dimension up to the next whole inch,139 in³/lb Daily Rates · 166 in³/lb Retail Rates · dimensions rounded up to whole inches
+ups_dom,UPS,US Domestic,retail,Retail Rates (UPS Store / counter),166,,each dimension up to the next whole inch,139 in³/lb Daily Rates · 166 in³/lb Retail Rates · dimensions rounded up to whole inches
+ups_intl,UPS,International,all,International services,139,5000,each dimension up to the next whole cm,"5,000 cm³/kg · (L×W×H in cm) ÷ 5,000, rounded up to the next kg"
+usps,USPS,US Domestic,priority,Priority Mail,139,,each dimension up to the next whole inch,"139 in³/lb · only parcels over 1 ft³ (1,728 in³) · each dimension rounded up to the whole inch · Flat Rate and Cubic are exempt"
+usps,USPS,US Domestic,ground_advantage,USPS Ground Advantage (commercial),139,,each dimension up to the next whole inch,"139 in³/lb · only parcels over 1 ft³ (1,728 in³) · each dimension rounded up to the whole inch · Flat Rate and Cubic are exempt"
+usps,USPS,US Domestic,ground_advantage_retail,USPS Ground Advantage – Retail,139,,each dimension up to the next whole inch,"139 in³/lb · only parcels over 1 ft³ (1,728 in³) · each dimension rounded up to the whole inch · Flat Rate and Cubic are exempt"
+usps,USPS,US Domestic,priority_express,Priority Mail Express,139,,each dimension up to the next whole inch,"139 in³/lb · only parcels over 1 ft³ (1,728 in³) · each dimension rounded up to the whole inch · Flat Rate and Cubic are exempt"
+usps,USPS,US Domestic,parcel_select,Parcel Select,139,,each dimension up to the next whole inch,"139 in³/lb · only parcels over 1 ft³ (1,728 in³) · each dimension rounded up to the whole inch · Flat Rate and Cubic are exempt"
+dhl,DHL,Express (from the US),express,DHL Express Worldwide / US Domestic Express,139,,not stated,139 in³/lb · (L×W×H in inches) ÷ 139 per piece · rated in whole-lb steps (DHL US rate tables)
+royalmail,Parcelforce,Worldwide (international),worldwide,Parcelforce Worldwide (international),,5000,not stated,"5,000 cm³/kg · (L×W×H in cm) ÷ 5,000 · international services · shown unrounded"
+freight,Air Freight,Forwarder (1:6 ratio),air,Air freight (1:6),,6000,not stated,"6,000 cm³/kg · common air-freight ratio (DHL Global Forwarding) · confirm with your forwarder"

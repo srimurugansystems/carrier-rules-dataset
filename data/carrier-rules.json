@@ -1,0 +1,449 @@
+{
+ "meta": {
+  "name": "Carrier rules dataset: DIM divisors, size limits and surcharge thresholds",
+  "version": "2026.11.04",
+  "published": "2026-11-04",
+  "rules_verified_on": "2026-09-22",
+  "homepage": "https://boxvolumecalculator.com/data/",
+  "licence": {
+   "name": "CC BY 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/",
+   "attribution": "BoxVolumeCalculator (boxvolumecalculator.com), Carrier rules dataset"
+  },
+  "source_policy": "Every value comes from the carrier's or the seller's own page or PDF. Each section lists its sources.",
+  "units": "Lengths in inches, volumes in cubic inches, weights in pounds, divisors in in³/lb or cm³/kg, money in USD.",
+  "warning": "Carriers change rules, usually in January and July. Check the source before you rely on a value."
+ },
+ "dim_divisors": [
+  {
+   "carrier_id": "fedex_dom",
+   "carrier": "FedEx",
+   "region": "US Domestic",
+   "service_id": "all",
+   "service": "All US services",
+   "divisor_in3_per_lb": 139,
+   "divisor_cm3_per_kg": 5000,
+   "dimension_rounding": "each dimension up to the next whole inch",
+   "note": "139 in³/lb · (L×W×H in inches) ÷ 139, rounded up to the next lb"
+  },
+  {
+   "carrier_id": "fedex_intl",
+   "carrier": "FedEx",
+   "region": "International",
+   "service_id": "all",
+   "service": "International services",
+   "divisor_in3_per_lb": 139,
+   "divisor_cm3_per_kg": 5000,
+   "dimension_rounding": "each dimension up to the next whole cm",
+   "note": "5,000 cm³/kg · (L×W×H in cm) ÷ 5,000, rounded up to the next kg"
+  },
+  {
+   "carrier_id": "ups_dom",
+   "carrier": "UPS",
+   "region": "US Domestic",
+   "service_id": "daily",
+   "service": "Daily Rates (UPS account)",
+   "divisor_in3_per_lb": 139,
+   "divisor_cm3_per_kg": 5000,
+   "dimension_rounding": "each dimension up to the next whole inch",
+   "note": "139 in³/lb Daily Rates · 166 in³/lb Retail Rates · dimensions rounded up to whole inches"
+  },
+  {
+   "carrier_id": "ups_dom",
+   "carrier": "UPS",
+   "region": "US Domestic",
+   "service_id": "retail",
+   "service": "Retail Rates (UPS Store / counter)",
+   "divisor_in3_per_lb": 166,
+   "divisor_cm3_per_kg": null,
+   "dimension_rounding": "each dimension up to the next whole inch",
+   "note": "139 in³/lb Daily Rates · 166 in³/lb Retail Rates · dimensions rounded up to whole inches"
+  },
+  {
+   "carrier_id": "ups_intl",
+   "carrier": "UPS",
+   "region": "International",
+   "service_id": "all",
+   "service": "International services",
+   "divisor_in3_per_lb": 139,
+   "divisor_cm3_per_kg": 5000,
+   "dimension_rounding": "each dimension up to the next whole cm",
+   "note": "5,000 cm³/kg · (L×W×H in cm) ÷ 5,000, rounded up to the next kg"
+  },
+  {
+   "carrier_id": "usps",
+   "carrier": "USPS",
+   "region": "US Domestic",
+   "service_id": "priority",
+   "service": "Priority Mail",
+   "divisor_in3_per_lb": 139,
+   "divisor_cm3_per_kg": null,
+   "dimension_rounding": "each dimension up to the next whole inch",
+   "note": "139 in³/lb · only parcels over 1 ft³ (1,728 in³) · each dimension rounded up to the whole inch · Flat Rate and Cubic are exempt"
+  },
+  {
+   "carrier_id": "usps",
+   "carrier": "USPS",
+   "region": "US Domestic",
+   "service_id": "ground_advantage",
+   "service": "USPS Ground Advantage (commercial)",
+   "divisor_in3_per_lb": 139,
+   "divisor_cm3_per_kg": null,
+   "dimension_rounding": "each dimension up to the next whole inch",
+   "note": "139 in³/lb · only parcels over 1 ft³ (1,728 in³) · each dimension rounded up to the whole inch · Flat Rate and Cubic are exempt"
+  },
+  {
+   "carrier_id": "usps",
+   "carrier": "USPS",
+   "region": "US Domestic",
+   "service_id": "ground_advantage_retail",
+   "service": "USPS Ground Advantage – Retail",
+   "divisor_in3_per_lb": 139,
+   "divisor_cm3_per_kg": null,
+   "dimension_rounding": "each dimension up to the next whole inch",
+   "note": "139 in³/lb · only parcels over 1 ft³ (1,728 in³) · each dimension rounded up to the whole inch · Flat Rate and Cubic are exempt"
+  },
+  {
+   "carrier_id": "usps",
+   "carrier": "USPS",
+   "region": "US Domestic",
+   "service_id": "priority_express",
+   "service": "Priority Mail Express",
+   "divisor_in3_per_lb": 139,
+   "divisor_cm3_per_kg": null,
+   "dimension_rounding": "each dimension up to the next whole inch",
+   "note": "139 in³/lb · only parcels over 1 ft³ (1,728 in³) · each dimension rounded up to the whole inch · Flat Rate and Cubic are exempt"
+  },
+  {
+   "carrier_id": "usps",
+   "carrier": "USPS",
+   "region": "US Domestic",
+   "service_id": "parcel_select",
+   "service": "Parcel Select",
+   "divisor_in3_per_lb": 139,
+   "divisor_cm3_per_kg": null,
+   "dimension_rounding": "each dimension up to the next whole inch",
+   "note": "139 in³/lb · only parcels over 1 ft³ (1,728 in³) · each dimension rounded up to the whole inch · Flat Rate and Cubic are exempt"
+  },
+  {
+   "carrier_id": "dhl",
+   "carrier": "DHL",
+   "region": "Express (from the US)",
+   "service_id": "express",
+   "service": "DHL Express Worldwide / US Domestic Express",
+   "divisor_in3_per_lb": 139,
+   "divisor_cm3_per_kg": null,
+   "dimension_rounding": "not stated",
+   "note": "139 in³/lb · (L×W×H in inches) ÷ 139 per piece · rated in whole-lb steps (DHL US rate tables)"
+  },
+  {
+   "carrier_id": "royalmail",
+   "carrier": "Parcelforce",
+   "region": "Worldwide (international)",
+   "service_id": "worldwide",
+   "service": "Parcelforce Worldwide (international)",
+   "divisor_in3_per_lb": null,
+   "divisor_cm3_per_kg": 5000,
+   "dimension_rounding": "not stated",
+   "note": "5,000 cm³/kg · (L×W×H in cm) ÷ 5,000 · international services · shown unrounded"
+  },
+  {
+   "carrier_id": "freight",
+   "carrier": "Air Freight",
+   "region": "Forwarder (1:6 ratio)",
+   "service_id": "air",
+   "service": "Air freight (1:6)",
+   "divisor_in3_per_lb": null,
+   "divisor_cm3_per_kg": 6000,
+   "dimension_rounding": "not stated",
+   "note": "6,000 cm³/kg · common air-freight ratio (DHL Global Forwarding) · confirm with your forwarder"
+  }
+ ],
+ "size_rules": {
+  "ups_dom": {
+   "additionalHandling": {
+    "longestIn": 48,
+    "secondIn": 30,
+    "lengthPlusGirthIn": 105,
+    "cubicIn": 10368,
+    "minBillableLb": 40,
+    "weightLb": 50
+   },
+   "largePackage": {
+    "lengthPlusGirthIn": 130,
+    "longestIn": 96,
+    "cubicIn": 17280,
+    "weightLb": 110,
+    "minBillableLb": 90
+   },
+   "maximum": {
+    "weightLb": 150,
+    "longestIn": 108,
+    "lengthPlusGirthIn": 165
+   }
+  },
+  "ups_intl": {
+   "additionalHandling": {
+    "longestIn": 48,
+    "secondIn": 30,
+    "lengthPlusGirthIn": 105,
+    "cubicIn": 10368,
+    "minBillableLb": 40,
+    "weightLb": 55
+   },
+   "largePackage": {
+    "lengthPlusGirthIn": 130,
+    "minBillableLb": 90
+   },
+   "maximum": {
+    "weightLb": 150,
+    "longestIn": 108,
+    "lengthPlusGirthIn": 165
+   }
+  },
+  "usps": {
+   "maximum": {
+    "weightLb": 70
+   }
+  },
+  "dhl_us": {
+   "oversizePiece": {
+    "longestIn": 40,
+    "secondIn": 32,
+    "fee": 30
+   },
+   "overweightPiece": {
+    "weightLb": 150,
+    "fee": 100
+   },
+   "nonConveyable": {
+    "minLb": 56,
+    "maxLb": 150,
+    "fee": 30
+   }
+  },
+  "fedex_dom": {
+   "additionalHandling": {
+    "longestIn": 48,
+    "secondIn": 30,
+    "lengthPlusGirthIn": 105,
+    "cubicIn": 10368,
+    "minBillableLb": 40,
+    "weightLb": 50
+   },
+   "oversize": {
+    "longestIn": 96,
+    "lengthPlusGirthIn": 130,
+    "cubicIn": 17280,
+    "weightLb": 110,
+    "minBillableLb": 90
+   },
+   "maximum": {
+    "weightLb": 150,
+    "longestIn": 108,
+    "lengthPlusGirthIn": 165
+   }
+  },
+  "fedex_intl": {
+   "additionalHandling": {
+    "longestIn": 48,
+    "secondIn": 30,
+    "lengthPlusGirthIn": 105,
+    "cubicIn": 10368,
+    "minBillableLb": 40,
+    "weightLb": 55
+   },
+   "oversize": {
+    "longestIn": 96,
+    "lengthPlusGirthIn": 130,
+    "cubicIn": 17280,
+    "weightLb": 110,
+    "minBillableLb": 0
+   },
+   "maximum": {
+    "weightLb": 150,
+    "longestIn": 108,
+    "lengthPlusGirthIn": 165
+   }
+  }
+ },
+ "usps": {
+  "dim": {
+   "divisor_in": 139,
+   "nonrect_divisor_pm_in": 166,
+   "nonrect_divisor_ga_in": 139,
+   "over_in3": 1728,
+   "cap_lb": 70,
+   "note": "Nonrectangular parcels: DMM 223 §1.4.3 (Priority Mail) divides by 166, DMM 283 §1.4.3 (Ground Advantage, commercial) divides by 139. Both read on the verified date."
+  },
+  "size": {
+   "max_lg_in": 108,
+   "max_lg_ga_retail_in": 130,
+   "max_lb": 70
+  },
+  "nonstandard": {
+   "len1_in": 22,
+   "len2_in": 30,
+   "cube_in3": 3456
+  },
+  "cubic": {
+   "pm_max_ft3": 0.5,
+   "ga_max_ft3": 1.0,
+   "max_lb": 20,
+   "max_long_in": 22,
+   "soft_max_lw_in": 36,
+   "soft_tiers": [
+    [
+     21,
+     0.1
+    ],
+    [
+     27,
+     0.2
+    ],
+    [
+     31,
+     0.3
+    ],
+    [
+     34,
+     0.4
+    ],
+    [
+     36,
+     0.5
+    ]
+   ]
+  }
+ },
+ "amazon_fba": {
+  "dim": {
+   "divisor_in": 139,
+   "bulky_min_side_in": 2
+  },
+  "tiers": {
+   "small_standard": {
+    "weight_oz": 16,
+    "longest_in": 15,
+    "median_in": 12,
+    "shortest_in": 0.75
+   },
+   "large_standard": {
+    "weight_lb": 20,
+    "longest_in": 18,
+    "median_in": 14,
+    "shortest_in": 8
+   },
+   "small_bulky": {
+    "weight_lb": 50,
+    "longest_in": 37,
+    "median_in": 28,
+    "shortest_in": 20,
+    "lg_in": 130
+   },
+   "large_bulky": {
+    "weight_lb": 50,
+    "longest_in": 59,
+    "median_in": 33,
+    "shortest_in": 33,
+    "lg_in": 130
+   },
+   "xl_bands_lb": [
+    50,
+    70,
+    150
+   ]
+  },
+  "overmax": {
+   "longest_in": 96,
+   "lg_in": 130,
+   "max_lb": 150
+  }
+ },
+ "sources": {
+  "usps": [
+   {
+    "label": "USPS DMM 223 (Priority Mail: DIM weight, cubic, nonstandard fees)",
+    "url": "https://pe.usps.com/text/dmm300/223.htm"
+   },
+   {
+    "label": "USPS DMM 133 (Ground Advantage — Retail)",
+    "url": "https://pe.usps.com/text/dmm300/133.htm"
+   },
+   {
+    "label": "USPS DMM 283 (Ground Advantage — Commercial, cubic)",
+    "url": "https://pe.usps.com/text/dmm300/283.htm"
+   },
+   {
+    "label": "USPS DMM 101 (maximum size and weight)",
+    "url": "https://pe.usps.com/text/dmm300/101.htm"
+   }
+  ],
+  "ups": [
+   {
+    "label": "UPS 2026 Rate and Service Guide (Daily Rates)",
+    "url": "https://assets.ups.com/adobe/assets/urn:aaid:aem:356d938a-4f0a-4c71-b50e-bdd890f50b47/original/as/daily-rates-us-en.pdf"
+   },
+   {
+    "label": "UPS 2026 Rate and Service Guide (Retail Rates)",
+    "url": "https://assets.ups.com/adobe/assets/urn:aaid:aem:47caed8a-c6fe-41e9-b98f-63f89d3d3f6c/original/as/retail-rates-us-en.pdf"
+   },
+   {
+    "label": "UPS — Shipping dimensions and weight",
+    "url": "https://www.ups.com/us/en/support/shipping-support/shipping-dimensions-weight"
+   },
+   {
+    "label": "UPS — Additional Handling & Large Package criteria",
+    "url": "https://www.ups.com/us/en/support/shipping-support/shipping-dimensions-weight/avoid-additional-shipping-fees"
+   }
+  ],
+  "dhl": [
+   {
+    "label": "DHL Express US Service & Rate Guide 2026",
+    "url": "https://mydhl.express.dhl/content/dam/downloads/us/en/rate-guide/service_and_rate_guide_us_en_2026.pdf.coredownload.pdf"
+   },
+   {
+    "label": "DHL Express U.S. Domestic Retail Rate & Service Guide 2026",
+    "url": "https://www.dhl.com/content/dam/dhl/global/dhl-express/documents/pdf/retail-rate-guide-us-en.pdf"
+   },
+   {
+    "label": "DHL — How to calculate volumetric weight",
+    "url": "https://www.dhl.com/discover/en-sg/ship-with-dhl/start-shipping/how-to-calculate-dhl-volumetric-weight"
+   },
+   {
+    "label": "DHL Global Forwarding — calculating chargeable weights",
+    "url": "https://www.dhl.com/us-en/home/global-forwarding/freight-forwarding-education-center/calculating-chargeable-weights.html"
+   }
+  ],
+  "parcelforce": [
+   {
+    "label": "Parcelforce — measuring international parcels",
+    "url": "https://www.parcelforce.com/help-and-advice/sending/how-to-measure-a-parcel-for-international-delivery"
+   }
+  ],
+  "fedex": [
+   {
+    "label": "FedEx — What is dimensional weight",
+    "url": "https://www.fedex.com/en-us/shipping/packaging/what-is-dimensional-weight.html"
+   },
+   {
+    "label": "FedEx 2026 surcharge and fee changes",
+    "url": "https://www.fedex.com/content/dam/fedex/us-united-states/services/surcharge_and_fee_changes_2026.pdf"
+   },
+   {
+    "label": "FedEx Service Guide 2026",
+    "url": "https://www.fedex.com/content/dam/fedex/us-united-states/services/Service_Guide_2026.pdf"
+   }
+  ],
+  "amazon": [
+   {
+    "label": "Amazon Seller Central — Product size tiers",
+    "url": "https://sellercentral.amazon.com/help/hub/reference/external/GG5KW835AHDJCH8W"
+   },
+   {
+    "label": "Amazon — 2026 US FBA fulfillment fee changes",
+    "url": "https://sellercentral.amazon.com/help/hub/reference/external/GABBX6GZPA8MSZGW"
+   }
+  ]
+ }
+}
